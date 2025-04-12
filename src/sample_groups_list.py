@@ -48,7 +48,7 @@ def FindGroups(oHostGroup, server, sFilter):
 
 
 def PrintGroupsTree(arrGroups, nLevel):
-    """Recursively prints KSC group structure."""
+    """Recursively prints KSC group structure"""
     for group in arrGroups:
         nId = group["id"]
         strName = group["name"]
@@ -65,7 +65,7 @@ def PrintGroupsTree(arrGroups, nLevel):
 
 
 def EnumerateGroups(oHostGroup):
-    """Prints KSC group structure."""
+    """Prints KSC group structure"""
     print('Enumerating subgroups in root group "Managed devices":')
 
     # get id of root group ('Managed devices' group)
@@ -82,7 +82,7 @@ def EnumerateGroups(oHostGroup):
 
 
 def ParseGroupId(oHostGroup, nId):
-    """Analyzes all groups from 0 to nId."""
+    """Analyzes all groups from 0 to nId"""
     lstGroups = []
 
     if nId >= 0:
