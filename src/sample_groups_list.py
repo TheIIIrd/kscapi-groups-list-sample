@@ -110,11 +110,11 @@ def main():
     server = GetServer(server_address, server_port, username, password)
     oHostGroup = KlAkHostGroup(server)
 
-    # Simple enumeration of numbers
+    # simple enumeration of numbers
     ParseGroupId(oHostGroup, 15)
     print()
 
-    # Search all groups
+    # search all groups
     FindGroups(oHostGroup, server, "")
     print()
 
